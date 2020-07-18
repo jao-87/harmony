@@ -69,17 +69,29 @@ html {
 }
 
 header {
-	background: blue;
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
+	color: white;
 }
+
+.controls {
+	text-align: center;
+	display: inline-block;
+}
+
+.controlImg {
+	height: 50px;
+	margin: 30px 15px 15px 15px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+	overflow: hidden;
+	display: inline-block;
 }
 
 li {
