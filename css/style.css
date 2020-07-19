@@ -29,18 +29,18 @@
 	color: white;
 }
 
-.active {
+.setting.active {
 	border: 2px white solid;
 	border-radius: 5px;
 }
 
-i {
+.setting-icon {
 	opacity: 0;
 	padding-right: 10px;
 	padding-left: 5px;
 }
 
-.active i {
+.active .setting-icon {
 	opacity: 1;
 }
 
@@ -50,6 +50,36 @@ i {
 	padding-right: 10px;
 	padding-left: 10px;
 	margin-top: 5px;
+}
+
+.control-icon {
+	opacity: .6;
+	transition: all 0.5s linear;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%) scale(2);
+	transform: translate(-50%, -50%) scale(2);
+}
+
+.active .control-icon {
+	opacity: 1;
+	transform: translate(-50%, -50%) scale(3);
+}
+
+.control-wrapper {
+	height: 100px;
+	width: 100px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	position: relative;
+	transition: all 0.5s linear;
+}
+
+.control-wrapper.active {
+	background: rgb(255,255,255);
+	background: radial-gradient(circle, rgba(255,255,255,.75) 0%, rgba(255,255,255,0) 74%, rgba(255,255,255,0) 100%);
 }
 
 html, body {

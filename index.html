@@ -10,9 +10,9 @@
                 <nav>
                 <div class="controls">
                 <ul>
-                    <li><img id="back-btn" class="controlImg" src="images/ControlSymbol.png"></li>
-                    <li><img id="audio-btn" class="controlImg" src="images/SoundSymbol.png"></li>
-                    <li><img id="video-btn" class="controlImg" src="images/SymbolVideo.png"></li>
+                    <li><div id="back-btn" class="control-wrapper"><i class="fas fa-arrow-left control-icon"></i></div></li>
+                    <li><div id="audio-btn" class="control-wrapper active"><i class="fas fa-microphone control-icon"></i></div></li>
+                    <li><div id="video-btn" class="control-wrapper"><i class="fas fa-video control-icon"></i></div></li>
                 </ul>
                 <div class="label" id="control-label">Options</div>
                 </div>
@@ -21,12 +21,12 @@
         <nav class="float-off-left3d full-height side-nav" id="menu-1">
             <h2>Microphone</h2>
             <p>Allow other listeners to hear you cheer and sing along</p>
-            <div id="mic-on" class="setting active enabled"><i class="fas fa-check"></i>On</div>
-            <div id="mic-off" class="setting"><i class="fas fa-check"></i>Off</div>
+            <div id="mic-on" class="setting active enabled"><i class="fas fa-check setting-icon"></i>On</div>
+            <div id="mic-off" class="setting"><i class="fas fa-check setting-icon"></i>Off</div>
             <h2>Crowd Audio</h2>
             <p>Hear reactions from other listeners, as if you were all in the same venue</p>
-            <div id="crowd-on" class="setting enabled"><i class="fas fa-check"></i>On</div>
-            <div id="crowd-off" class="setting"><i class="fas fa-check"></i>Off</div>
+            <div id="crowd-on" class="setting enabled"><i class="fas fa-check setting-icon"></i>On</div>
+            <div id="crowd-off" class="setting"><i class="fas fa-check setting-icon"></i>Off</div>
           </nav>
           <script
   src="https://code.jquery.com/jquery-3.4.1.js"
