@@ -40,7 +40,7 @@
 	padding-left: 5px;
 }
 
-.active .setting-icon {
+.enabled .setting-icon {
 	opacity: 1;
 }
 
