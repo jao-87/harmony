@@ -235,7 +235,7 @@ function initializeControlMode() {
     headerVisible = true;
     audioNavVisible = false;
     videoNavVisible = false;
-    activeHeaderItem = null;
+    activeHeaderItem = 1;
 }
 
 function render() {
@@ -259,7 +259,7 @@ function render() {
             $("#back-btn").addClass("active");
             $("#audio-btn").removeClass("active");
             $("#video-btn").removeClass("active");
-            $("#control-label").text("Back");
+            $("#control-label").text("Exit Concert");
             break;
         case 1:
             $("#back-btn").removeClass("active");
