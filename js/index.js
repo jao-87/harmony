@@ -14,10 +14,7 @@ var activeHeaderItem = null;
 var activeAudioNavItem = 0;
 var activeVideoNavItem = 0;
 
-// Confirm
-var KEY_ENTER = 13;
-// Cancel
-var KEY_COMMA = 39;
+
 // Left
 var KEY_A = 97;
 // Up
@@ -26,6 +23,11 @@ var KEY_W = 119;
 var KEY_S = 115;
 // Right
 var KEY_D = 100;
+
+// K
+var KEY_CONFIRM = 107;
+// L
+var KEY_DISMISS = 108;
 
 var HEADER_AUDIO = 1;
 var HEADER_VIDEO = 2;
@@ -69,10 +71,10 @@ function handleKeypress(e) {
 
 function handleHeaderKeypress(e) {
     switch (e.which) {
-        case KEY_ENTER:
+        case KEY_CONFIRM:
             selectControlItem();
             break;
-        case KEY_COMMA:
+        case KEY_DISMISS:
             dismissHeader();
             break;
         case KEY_W:
@@ -128,10 +130,10 @@ function moveHeaderRight() {
 
 function handleAudioKeypress(e) {
     switch (e.which) {
-        case KEY_ENTER:
+        case KEY_CONFIRM:
             selectAudioItem();
             break;
-        case KEY_COMMA:
+        case KEY_DISMISS:
             dismissAudioMenu();
             break;
         case KEY_W:
@@ -179,10 +181,10 @@ function moveAudioDown() {
 
 function handleVideoKeypress(e) {
     switch (e.which) {
-        case KEY_ENTER:
+        case KEY_CONFIRM:
             selectVideoItem();
             break;
-        case KEY_COMMA:
+        case KEY_DISMISS:
             dismissVideoMenu();
             break;
         case KEY_W:
